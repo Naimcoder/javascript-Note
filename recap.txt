@@ -1,0 +1,699 @@
+/*
+first: 
+1.variable(let,const three data type in number,boolen,string)
+2.condition(if,else,if-else,swaich,>,<,===,==,!==,<=,>=)
+3.array(map,find,filter,pop,push,unshift,shift,indexOf)
+4.function
+5.objcet
+6.loops
+*/ 
+/*
+1.1 variable(let,const)three data type of variable.:
+1.2 condition(<, >, ===, ==, !==, <=, >=).:
+1.3 array (declare,length,index,push,pop,indexOf,inculdes);
+1.4 for-of loop,while loop,for-in,for loop.:
+1.5 function return parameter.:
+1.6 object property,includeing array,object.:
+/-------------------------------------------------/
+
+ES6:---
+2.1 template string ${}
+2.2 spread oparator
+2.3 copy an array than add a new element to an array
+2.4 use filter to remove an element from an array.
+2.5 arrow function(
+    * no parameter
+    * single parameter
+    * multiple parameter
+    * multiple line
+)
+2.6 array destructuring, object destructuring
+2.7 object shortHand
+2.8 function parameter defaut value
+2.9 optional chaning(?)
+3 Browser API:-
+3.1 localstorage ,sesseionstorage
+3.2 local API
+3.3 History API
+3.4 fetch,async await,error
+3.5 Array method:(
+    * map varaiable name
+    * filter
+    * find
+    * foreach
+)
+3.6 terary operator
+3.7 logical and logical or (&&,||)
+3.8 JSON(stringity,parse)
+3.9 dev tool
+4. trurty  value ,falsey value,null,undefinde
+// -------------------------------------------
+
+1.  Let, Const, Var
+2.  Hoisting
+3.  Scope (block, function,global)
+4.  loop (for, while)
+5.  Condition (if, if else, switch, ternary operator)
+6.  Array Method (map, filter, reduce, find, pop, push, shift, unshift) Most Important
+7.  Object
+8.  Function (parameter, default parameter, rest parameter) Most Important
+9.  Primitive NON primitive(reference type)
+10. Spread Operator (...) Most Important
+11. Destructruing (Object, array) Most Important
+12. Async Await Function
+13. Promise ( from Youtube)
+14. JSON
+15. Locale Storage, Session Sotrage
+16. Logical Operator (<,>,<=,>=,!, !=,!==, &&, ||)
+17. Boolean Most Important
+18. Modules (Import Export)
+19. Class Constructor
+20. Math, Most Important
+21. Date, Most Important
+22. DOM Event
+23. Regular Expression
+24. Fetch (Fetch, Axios) Most Most Important
+25. Callback Function
+*/
+----------------------variable-----------------------------------
+// How to declare a variable using let and const
+/*
+declare  a variable 5 type way:-
+1/keyword(var,let,const)
+2/variable name(name,age,subject)
+3/assignment oparator(=)
+4/value('naim' 20,'bangla' )
+5/semicolon(;)
+*/
+
+/*
+what is variable?
+=: Variables are containers for storing data (storing data values);
+
+javascript is a dynamic typed language.
+// 2 type of javascript * primitive data type
+and
+* non primitive data type
+*/
+
+/*
+  Three type variable:
+  1/var 
+  2/let
+  3/const
+*/
+
+// ===================================================
+// var:=
+// variable Initialization
+var name = 'naim';
+     
+// variable Declaration
+var name;
+// variable assign
+='naim';
+// variable reassign
+name = 'nahid';
+
+// variable reDeclaration
+var name = 'shehab';
+
+/*
+var is gobal scope variable
+var variable used to redecared and rerassign variable
+*/
+
+
+// ===================================================
+// const:=
+/*
+* If we don't want to change any value we will use const variable.
+* The value cannot be changed  in a const variable
+* we will used the value that remains fixed when there in no change const variable
+* value cannot be reassigned and  reDeclaration const variable
+* const block scope.
+*/ const Initialization
+const names = 'naimul islam';
+// can not const variabel:-
+
+// const not be used reassign
+names = 'Md naimul islam';
+    --------
+// const not be used reDeclaration
+const Name = 'naim';
+   
+
+// ===================================================
+/*
+let:- 
+1.Any value we will use if  we want to change it anytime used to let variable.
+2.change value can be used in let variable
+3 let can use reassign value to change but cannot be redeclared with same name.
+4.let block scope
+*/
+
+// variable Declaration
+let age
+     
+// variable assign
+ = 30;
+ 
+// variable reassign
+age = 24;
+
+// variable Initialization
+let session = 'raine';
+
+// ===================================================
+
+/*
+primitive Data type:=
+* simple one value of primitive data type
+fiva type of data types:
+1.string('',"",``,)
+2.number (integar,float)
+3.boolean(true,flase)
+4.null
+5.undefind
+
+// string
+let name='naim';
+// number
+let age= 24;
+// boolean
+let marred= false;
+// undefind
+let todo;
+// null
+let data=null
+
+
+*/
+/*
+non primitive data type:
+*multipul data type value of non primitive data type in javascript
+* no-promitive data type  reatins the reference.
+Tow data type of non primitive types data:
+non primitive data type  is  simple value 
+
+1/array([])
+const ages=[20,34,56,23,45]
+
+2/object({})
+const parson={
+     name:'naim',
+     age:23,
+     married:flase
+
+}
+* reatins the reference with object and array
+*/
+
+/*
+javascript type check in (typeof)
+const item='naim';
+console.log(typeof variablename);
+*/
+/*
+string convarte to number.
+parseInt(),parseFloat();
+shortchurt:-
++stringname;
+*/
+0
+/*
+inputFild the fild value with value
+Element text the  value with .innerText;
+*/ 
+----------------------condition-----------------------------------
+/*
+what is conditon:-
+
+// Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run.
+ There are multiple different types of conditionals in JavaScript including: “If” statements:
+  where if a condition is true it is used to specify execution for a block of code.
+
+
+6 base condition in javascript:-
+* <(less than)
+* >(greater than)
+* ===(three equal)
+* ==(double equal)
+* !==(not equal)
+* <=(less than equal)
+* >=(greater than equal)
+2/ multipul condition.
+1.&& (and get)
+2. || (and or get)
+
+3/conditional statements:-
+3.1 if
+3.2 else-if
+3.3 else
+3.4 switch 
+
+1.Truethy Value:-
+1.1 true
+1.2 any number (+ve,-ve)will be othen then 0
+1.3 any string other than empty string  100% no true
+1.4 '0',"false";
+1.5 empty object{}truthy,empty array[]truthy
+ 
+2.Falsey Value:-
+2.1 false
+2.2 0
+2.3 ''(empty string)
+2.4 any undefined falsey
+2.5 any null falsy
+*/
+// base condition
+// less than
+console.log(4 < 6);
+
+// greater than
+console.log(5 > 6);
+
+// double equal
+console.log(5 == 6);
+
+// not equal
+console.log(5 !== 5)
+
+// three equal
+console.log(5 === 5)
+
+// less than or equal
+console.log(5 >= 5)
+
+// greater than or equal
+console.log(5 <= 7)
+
+//  if  else statements;
+const money = 3000;
+const iphone = 5000;
+const laptop = 2000;
+
+if (iphone <= money) {
+     console.log('iphone kenboh ki moja');
+}
+else if (laptop >= money) {
+     console.log('laptop kenboh ki moja')
+}
+else {
+     console.log('basay bose thkhboh var hoyboh nh');
+}
+// check truethy
+const item = ' ';
+if (item) {
+     console.log('your value is truethy')
+}
+else {
+      console.log("your value is falsey");
+}
+// check falsey
+const items = '';
+if (items) {
+     console.log('your value is truethy')
+}
+else {
+      console.log("your value is falsey");
+}
+// not sign
+const x = 0;
+if (!x) {
+     console.log("your value is truethy");
+} else {
+     console.log("your value is falsey");
+}
+// multipul condition
+if (money >= iphone && money>=laptop) {
+     console.log('sob kena palboh ki moja')
+} else {
+     console.log('onek taka jomaita hobi')
+}
+// multipul condition
+if (item===true||item==='tea') {
+     console.log('your value is right')
+}
+else {
+     console.log('your value is negative')
+}
+
+// mark ex:
+let marks = parseInt(prompt('Enter Your marks'));
+if (marks >= 80 && marks <= 100) {
+     alert("Congratulations! Your Result Is A+");
+}
+else if (marks >= 70 && marks <= 79) {
+     alert("Congratulations! Your Result Is A");
+}
+else if (marks >= 60 && marks <= 69) {
+     alert("Congratulations! Your Result Is A-");
+}
+else if (marks >= 50 && marks <= 59) {
+     alert("Congratulations! Your Result Is B");
+}
+else if (marks >= 40 && marks <= 49) {
+     alert("Congratulations! Your Result Is C");
+}
+else if (marks >= 33 && marks <= 39) {
+     alert("Congratulations! Your Result Is D");
+}
+else {
+     alert('Your Resule is FALL Places Next Year Good preperation')
+}
+/*
+note:-
+three equal(=== check typeof and value)
+dobule eqyal(== check only value)
+*/ 
+/* undefine javascript --------------------------------------------
+8 ways to get undefine;
+1.variable that is not initialized will give undefined 
+2.function with no return
+3.parameter that is not passed will be undefined 
+4.if return has nothing on the right side will return undefind
+5.property that does't exists on an object will give you undefined
+6.accessing array elements out side of the index range
+7.deleting an element inside an array
+8.set a value directly to undefind
+
+1
+let shehab;
+console.log(shehab);
+function x(a, b) {
+     const total = a + b;
+}
+// 2
+const result = x();
+console.log(x);
+// 3
+function  nums(a,b,c,d,e) {
+     const total = a + b + c + d + e;
+      console.log(a,b,c,d,e)
+}
+nums(2, 5);
+
+// 4
+function noNagitive(a, b) {
+     if (a < 0 || b < 0){
+          return
+     }
+     return a + b;
+}
+console.log(noNagitive(2, -9))
+// 5
+const naim = { name: 'naim', age: 20 }
+console.log(naim.salary);
+
+
+
+// 6
+const b = [23, 56, 78, 90, 23];
+console.log(b[1], b[4], b[200]);
+console.log(b);
+// 7
+const d = [23, 56, 78, 90, 23];
+// you should do not it. instead use splice used
+delete d[1];
+console.log(d);
+// 8
+const roll = undefined;
+console.log(roll);
+
+// null typeOf :object
+// undefined typeOf:indefined
+*/ 
+
+----------------------array-----------------------------------
+/*
+array (declare,length,index,push,pop,indexOf,inculdes,unshift,shifit);
+How to declare a array.!
+what is array?
+Ans: an array javascript array are used to store multiple values in a single line.
+* Array special object (typeof check ArrayisArray());
+
+ * JavaScript array is a non-primitive data-type 
+that allows you to store multiple collections of data
+
+length:-
+*length property is always one more than the highest array index;
+*array lest element to length-1;
+
+EX:-length
+const number=[20,45,67,89]
+consol.log(number.length);
+
+* array is index number start in (0)
+*/
+// declare a array
+const number = [23, 56, 78, 23, 56]
+console.log(number);
+
+// check a array length
+console.log(number.length);
+
+// check a array index number
+console.log(number.indexOf(23));
+
+// check a array index number value
+console.log(number[0])
+
+// array reassign 
+number[1] = 50;
+
+// array push;
+// * array index last Element add in array length 
+number.push(20);
+console.log(number);
+
+// array  pop 
+// * array index last Element remove in array length 
+number.pop();
+console.log(number);
+
+// array  unshift;
+// * array index frist Element add in array length 
+number.unshift(30);
+console.log(number)
+
+// array  shift;
+// * array index frist Element remove in array length 
+number.shift();
+console.log(number);
+
+// array inculdse;
+//To check the array index length value 
+console.log(number.includes(23));
+// array ar indexnumber  with number
+
+// array slice
+// To check the array index element cut 
+console.log(number.slice(0, 2));
+
+// splice() will only remove elements from the array and set elements every length in index element
+// array splice 
+console.log(number.splice(4, 4, 60));
+console.log(number);
+
+
+// =================================== array method=================================
+/*
+1/forEach
+2/filter
+3/find
+4/map
+
+*1/ForEach:-
+The forEach() method calls a function for each element in an array.
+snytax ForEach:-
+array.forEach(callback(currentValue),thisArg);
+
+The forEach() method takes in:
+* callback  The function to execute on every array element. It takes in:
+* currentValue  The current element being passed from the array
+* forEach() does not change the original array.
+* forEach() The function  takes 3 arguments 
+ **1 The item currentValue pass from array.
+ **2 The item index.
+ **3 The item array.
+ const count=[23,45,67,89]
+  array.forEach((x) => {
+   console.log(x)
+  }
+*2/map:-
+ const count=[23,45,67,89]
+const count=array.map(x =>x*2)
+*3/filter:-
+ const count=[23,40,67,89]
+  array.filter(x =>x%2===0);
+  }
+
+*4/find:-
+ const count=[23,40,67,89]
+  array.find(x =>x>50)
+
+  *5/reduce:-
+ const count5 = [40, 56, 78, 23, 56]
+const item4 = count5.reduce((prvesNumber, newNumber) => prvesNumber + newNumber);
+*/
+1.
+ const count=[23,45,67,89]
+count.forEach((entry) => {
+     console.log(entry)
+});
+2.
+const count2 = [30, 40, 50, 60, 70, 80]
+const item1 = count2.map(x => x * 2)
+console.log(item1);
+
+3.
+const count3 = [40, 51, 63, 75, 80, 82];
+const item2 = count3.filter(x => x % 2 == 1);
+console.log(item2);
+
+4.
+const conut4 = [33, 45, 67, 23, 45, 12];
+const item3 = conut4.find(x => x > 30);
+console.log(item3)
+
+5.
+const count5 = [40, 56, 78, 23, 56]
+const item4 = count5.reduce((prvesNumber, newNumber) => prvesNumber + newNumber);
+console.log(item4);
+
+----------------------function-----------------------------------
+
+/*
+what is function?
+Ans:
+* declare a function:-
+function ketword+function name+()+{};
+
+function myfunction(){
+ 
+}
+*/
+// parameter value send
+function myfunction(num1,num2) {
+     const number = num1*num2; 
+     return number;
+}
+// argument value recived
+const mynumber = myfunction(3,3);
+console.log(mynumber);
+
+function names(firstName, lastName) {
+     const myname = firstName + " " + lastName;
+     return myname;
+}
+const items = names('Md naimul', 'islam');
+console.log(items);
+
+function numbers() {
+     // let item = [23, 45, 67, 89, 90];
+        const item = [];
+     for (let i = 1; i <= 10; i+=2) {
+          item.push(i);
+     }
+      return(item);
+     
+}
+console.log(numbers());
+// 
+function numbers1() {
+     // let item = [23, 45, 67, 89, 90];
+        const item = [];
+     for (let i = 0; i <= 10; i+=2) {
+          item.push(i);
+     }
+      return item
+     
+}
+console.log(numbers1());
+
+// defulet parameter
+function  num(a,b=2,c=9,d=0) {
+     const item = a + b + c + d;
+     return item
+}
+console.log(num(10, 30, 10))
+
+// rest parameter
+function  add(add1,add2,...addall) {
+     console.log('a', add1);
+     console.log('b', add2);
+     console.log("all", addall);
+}
+add('one', 'tow',  'three', 'four', 'five', 'six');
+
+----------------------loops-----------------------------------
+
+/*
+what is loop?
+Ans: Loops are used in JavaScript to perform repeated tasks based on a condition.
+  Conditions typically return true or false.
+ A loop will continue running until the defined condition returns false.
+
+ * for loop declare:-
+ * for loop declare a 3 type 
+   1/initialzatio(let i=0)
+   2/condition(i<10)
+   3/finalExpression(i++)
+
+ for (initialization; condition; finalExpression) {
+  // code
+   }
+
+*/
+// 1. Iterate through integers from 0-8:
+for (let i = 0; i <= 8; i++){
+     console.log(i);
+}
+
+// 2. Use break to exit out of a for loop before condition is false:
+// break statement
+// continue statement
+for (let i = 1; i < 10; i+=2){
+     if (i === 7) {
+          break;
+     }
+     console.log( "total elephants: ",i);
+}
+// Exceeding the Bounds of an Array
+const arr = [1, 2, 3];
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+}
+// ======================================
+/*
+for...in loop:
+for...in loop used a object
+The for...in loop iterates over the properties of an object.
+for...in loop declare:-
+for(property in object){
+     // code
+}
+*/
+// 1. Iterate over the properties of an object and log its name and value to the
+// console:
+const furts = {
+     a: 'mango',
+     b: 'banana',
+     c:'orange'
+}
+for (let key in furts) {
+     console.log(key,':',furts[key]);
+
+}
+// ======================================
+// for...of used in a array
+for (variable of object) {
+     // code
+}
+const arr1 = ['one', 'tow', 'three']
+for (let i of arr1) {
+     console.log('*',i);
+}
+----------------------variable-----------------------------------
+----------------------variable-----------------------------------
