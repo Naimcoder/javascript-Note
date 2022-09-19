@@ -24,20 +24,7 @@ what is conditon:-
 3.3 else
 3.4 switch 
 
-1.Truethy Value:-
-1.1 true
-1.2 any number (+ve,-ve)will be othen then 0
-1.3 any string other than empty string  100% no true
-1.4 '0',"false";
-1.5 empty object{}truthy,empty array[]truthy
- 
-2.Falsey Value:-
-2.1 false
-2.2 0
-2.3 ''(empty string)
-2.4 any undefined falsey
-2.5 any null falsy
-*/
+
 // base condition
 // less than
 console.log(4 < 6);
@@ -138,61 +125,4 @@ else {
 note:-
 three equal(=== check typeof and value)
 dobule eqyal(== check only value)
-*/ 
-/* undefine javascript --------------------------------------------
-8 ways to get undefine;
-1.variable that is not initialized will give undefined 
-2.function with no return
-3.parameter that is not passed will be undefined 
-4.if return has nothing on the right side will return undefind
-5.property that does't exists on an object will give you undefined
-6.accessing array elements out side of the index range
-7.deleting an element inside an array
-8.set a value directly to undefind
-
-1
-let shehab;
-console.log(shehab);
-function x(a, b) {
-     const total = a + b;
-}
-// 2
-const result = x();
-console.log(x);
-// 3
-function  nums(a,b,c,d,e) {
-     const total = a + b + c + d + e;
-      console.log(a,b,c,d,e)
-}
-nums(2, 5);
-
-// 4
-function noNagitive(a, b) {
-     if (a < 0 || b < 0){
-          return
-     }
-     return a + b;
-}
-console.log(noNagitive(2, -9))
-// 5
-const naim = { name: 'naim', age: 20 }
-console.log(naim.salary);
-
-
-
-// 6
-const b = [23, 56, 78, 90, 23];
-console.log(b[1], b[4], b[200]);
-console.log(b);
-// 7
-const d = [23, 56, 78, 90, 23];
-// you should do not it. instead use splice used
-delete d[1];
-console.log(d);
-// 8
-const roll = undefined;
-console.log(roll);
-
-// null typeOf :object
-// undefined typeOf:indefined
 */ 

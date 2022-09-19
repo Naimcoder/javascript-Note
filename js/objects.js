@@ -115,3 +115,9 @@ console.log(key);
 //2 you can access the values
 const value = Object.values(parson2);
 console.log(value);
+
+var itemed = {
+  name: 'naim',
+  movies:['one','tow']
+}
+console.log(itemed["movies[0]"]);
